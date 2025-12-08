@@ -31,7 +31,7 @@ h1, h2 {
   margin-bottom: 20px;
 }
 
-#task-input {
+#todo-input {
   flex-grow: 1;
   padding: 10px;
   border: 2px solid #ccc;
@@ -74,12 +74,12 @@ hr {
 }
 
 /* List Styles */
-#task-list {
+#todo-list {
   list-style: none; /* Removes default bullets */
   padding: 0;
 }
 
-#task-list li {
+#todo-list li {
   background-color: #e9ecef;
   padding: 10px;
   margin-bottom: 8px;

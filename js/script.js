@@ -1,15 +1,9 @@
 "use strict";
 
-const form = document.querySelector("form");
-const input = document.querySelector("input");
+const todoForm = document.querySelector('#todo-form');
+const todoInput = todoForm.querySelector('#todo-input');
+const todoList = document.querySelector('#todo-list');
 
-form.addEventListener("submit", (event) => {
-  
-  event.preventDefault();
-  const userInput = input.value;
-  const newToDo = {
-    toDo: userInput,
-    status: false
-  }
-  toDos.push(newToDo);
-});
+console.log(todoForm);
+console.log(todoInput);
+console.log(todoList);
