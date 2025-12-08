@@ -61,6 +61,18 @@ hr {
   margin: 20px 0;
 }
 
+/* Search Input Style */
+#search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; 
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding doesn't increase total width */
+  display: block; 
+}
+
 /* List Styles */
 #task-list {
   list-style: none; /* Removes default bullets */
@@ -74,4 +86,34 @@ hr {
   border-radius: 4px;
   border-left: 5px solid #007bff;
   font-size: 18px;
+  
+  /* Flexbox for text and delete button alignment */
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+/* Style for the Delete Button */
+.delete-btn {
+  background: #ff4d4d; /* Red background for visibility */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px; /* Add space between text and button */
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1; 
+  transition: background-color 0.3s;
+  flex-shrink: 0; /* Prevents button from shrinking on small screens */
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Style for hidden items during search */
+.hide {
+  display: none;
 }
